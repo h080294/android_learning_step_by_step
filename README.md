@@ -9,7 +9,9 @@ Activity，Service，BroadCastReceiver，ContentProvider
 
 ### 二、Activity
 ####2.1 Activity的基本概念
+
 ####2.2 创建Activity
+
 2.2.1 创建活动
 
 2.2.2 学习Activity的布局加载
@@ -21,7 +23,9 @@ Activity，Service，BroadCastReceiver，ContentProvider
 2.2.5 学习在Activity中手动创建Menu
 
 2.2.6 销毁Activity
+
 ####2.3 Intent的使用
+
 2.3.1 显式Intent
 
 利用构造函数Intent(Context packageContext, Class<?> cls)
