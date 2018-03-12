@@ -34,7 +34,7 @@ public class PersistenceDemoActivity extends BaseActivity {
                         startActivity(intent);
                         break;
                     case 1:
-                        Intent one_intent = new Intent(PersistenceDemoActivity.this, PersSaveFileActivity.class);
+                        Intent one_intent = new Intent(PersistenceDemoActivity.this, PreSharedPreferencesActivity.class);
                         startActivity(one_intent);
                         break;
                 }

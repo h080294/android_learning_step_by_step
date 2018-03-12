@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.johnhao.listviewdemo.Activity.PreSharedPreferencesActivity">
+
+    <Button
+        android:id="@+id/btn_save_sharedprefs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存到SharedPreferences"/>
+
+    <Button
+        android:id="@+id/btn_load_sharedprefs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取SharedPrefs"/>
+
+    <TextView
+        android:id="@+id/text_sharedprefs_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_sharedprefs_practice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Sharedprefs Practice"
+        android:layout_marginTop="30dp"
+        android:background="#ffff00"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

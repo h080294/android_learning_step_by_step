@@ -47,7 +47,7 @@ public class BaseActivity extends AppCompatActivity{
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     ActivityCollector.finishAll();
-                    Intent intent = new Intent(context, LoginActivity.class);
+                    Intent intent = new Intent(context, LoginAdvActivity.class);
                     startActivity(intent);
                 }
             });
