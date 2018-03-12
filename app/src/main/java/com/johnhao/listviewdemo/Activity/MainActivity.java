@@ -18,7 +18,7 @@ public class MainActivity extends BaseActivity {
 
     private static final String TAG = "MainActivity";
     private static final String[] strs = new String[]{"基本的控件练习", "RecycleView 练习",
-            "Fragment 练习", "BroadCast 练习"};
+            "Fragment 练习", "BroadCast 练习", "持久化技术"};
     private ListView lv;
 
     @Override
@@ -53,7 +53,7 @@ public class MainActivity extends BaseActivity {
                         startActivity(ten_intent);
                         break;
                     case 4:
-                        Intent eve_intent = new Intent(MainActivity.this, UIBestPraticeActivity.class);
+                        Intent eve_intent = new Intent(MainActivity.this, PersistenceDemoActivity.class);
                         startActivity(eve_intent);
                         break;
                     default:

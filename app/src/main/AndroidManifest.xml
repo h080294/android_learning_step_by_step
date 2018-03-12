@@ -66,9 +66,13 @@
                 <action android:name="com.johnhao.listviewdemo.MY_BROADCAST" />
             </intent-filter>
         </receiver>
+
         <activity android:name=".Activity.LocalBroadcastActivity" />
         <activity android:name=".Activity.LoginActivity" />
-        <activity android:name=".Activity.AfterLoginActivity"></activity>
+        <activity android:name=".Activity.AfterLoginActivity" />
+        <activity android:name=".Activity.PersistenceDemoActivity" />
+        <activity android:name=".Activity.PersSaveFileActivity" />
+        <activity android:name=".Activity.PreSharedPreferencesActivity"></activity>
     </application>
 
 </manifest>
