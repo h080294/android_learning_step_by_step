@@ -14,7 +14,7 @@ import java.util.List;
 
 public class PersistenceDemoActivity extends BaseActivity {
 
-    public static final String[] strs = new String[]{"数据存储到文件中", "SharedPreferences"};
+    public static final String[] strs = new String[]{"数据存储到文件中", "SharedPreferences", "SQLite数据库存储"};
     private ListView lv;
 
     @Override
@@ -36,6 +36,10 @@ public class PersistenceDemoActivity extends BaseActivity {
                     case 1:
                         Intent one_intent = new Intent(PersistenceDemoActivity.this, PreSharedPreferencesActivity.class);
                         startActivity(one_intent);
+                        break;
+                    case 2:
+                        Intent two_intent = new Intent(PersistenceDemoActivity.this, SQLiteActivity.class);
+                        startActivity(two_intent);
                         break;
                 }
             }

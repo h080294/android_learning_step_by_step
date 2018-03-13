@@ -73,7 +73,9 @@
         <activity android:name=".Activity.PersistenceDemoActivity" />
         <activity android:name=".Activity.PersSaveFileActivity" />
         <activity android:name=".Activity.PreSharedPreferencesActivity" />
-        <activity android:name=".Activity.LoginAdvActivity"></activity>
+        <activity android:name=".Activity.LoginAdvActivity" />
+        <activity android:name=".Activity.SQLiteActivity" />
+        <activity android:name=".Activity.ContentProviderDemoActivity"></activity>
     </application>
 
 </manifest>
