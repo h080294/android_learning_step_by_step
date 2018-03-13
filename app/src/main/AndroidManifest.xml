@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -75,7 +76,8 @@
         <activity android:name=".Activity.PreSharedPreferencesActivity" />
         <activity android:name=".Activity.LoginAdvActivity" />
         <activity android:name=".Activity.SQLiteActivity" />
-        <activity android:name=".Activity.ContentProviderDemoActivity"></activity>
+        <activity android:name=".Activity.ContentProviderDemoActivity" />
+        <activity android:name=".Activity.ContentProviderMakeCallActivity"></activity>
     </application>
 
 </manifest>
