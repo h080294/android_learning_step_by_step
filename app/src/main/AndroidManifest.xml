@@ -77,7 +77,8 @@
         <activity android:name=".Activity.LoginAdvActivity" />
         <activity android:name=".Activity.SQLiteActivity" />
         <activity android:name=".Activity.ContentProviderDemoActivity" />
-        <activity android:name=".Activity.ContentProviderMakeCallActivity"></activity>
+        <activity android:name=".Activity.ContentProviderMakeCallActivity" />
+        <activity android:name=".Activity.ContentProviderContactActivity"></activity>
     </application>
 
 </manifest>

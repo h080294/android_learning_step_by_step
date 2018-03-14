@@ -32,6 +32,10 @@ public class ContentProviderDemoActivity extends BaseActivity {
                         Intent intent = new Intent(ContentProviderDemoActivity.this, ContentProviderMakeCallActivity.class);
                         startActivity(intent);
                         break;
+                    case 1:
+                        Intent one_intent = new Intent(ContentProviderDemoActivity.this, ContentProviderContactActivity.class);
+                        startActivity(one_intent);
+                        break;
                 }
             }
         });
