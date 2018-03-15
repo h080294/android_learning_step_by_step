@@ -18,7 +18,7 @@ public class MainActivity extends BaseActivity {
 
     private static final String TAG = "MainActivity";
     private static final String[] strs = new String[]{"基本的控件练习", "RecycleView 练习",
-            "Fragment 练习", "BroadCast 练习", "持久化技术", "Content Provider"};
+            "Fragment 练习", "BroadCast 练习", "持久化技术", "Content Provider", "多媒体"};
     private ListView lv;
 
     @Override
@@ -59,6 +59,10 @@ public class MainActivity extends BaseActivity {
                     case 5:
                         Intent five_intent = new Intent(MainActivity.this, ContentProviderDemoActivity.class);
                         startActivity(five_intent);
+                        break;
+                    case 6:
+                        Intent media_intent = new Intent(MainActivity.this, MediaDemoActivity.class);
+                        startActivity(media_intent);
                         break;
                     default:
                         setTitle("点击第" + (i + 1) + "行");
