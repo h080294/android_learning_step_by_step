@@ -12,7 +12,7 @@ import com.johnhao.listviewdemo.R;
 public class MediaDemoActivity extends BaseActivity {
 
     private ListView lv;
-    private static String[] strs = new String[]{"Camera"};
+    private static String[] strs = new String[]{"Camera && Album"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
