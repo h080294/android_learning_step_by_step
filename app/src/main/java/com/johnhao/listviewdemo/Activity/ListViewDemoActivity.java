@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.johnhao.listviewdemo.R;
 
@@ -65,8 +66,22 @@ public class ListViewDemoActivity extends BaseActivity {
                         Intent seven_intent = new Intent(ListViewDemoActivity.this, ListviewActivity.class);
                         startActivity(seven_intent);
                         break;
+                    default:
                 }
             }
         });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        switch (requestCode) {
+            case 1:
+                if (resultCode == RESULT_OK) {
+                    String data_back = data.getStringExtra("Extra_data");
+                    Toast.makeText(this, data_back, Toast.LENGTH_SHORT).show();
+                }
+                break;
+            default:
+        }
     }
 }
