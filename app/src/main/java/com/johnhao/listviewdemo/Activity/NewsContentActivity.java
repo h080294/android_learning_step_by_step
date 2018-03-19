@@ -8,7 +8,7 @@ import android.os.Bundle;
 import com.johnhao.listviewdemo.Fragment.NewsContentFragment;
 import com.johnhao.listviewdemo.R;
 
-public class NewsContentActivity extends AppCompatActivity {
+public class NewsContentActivity extends BaseActivity {
 
     public static void actionStart(Context context, String newsTitile, String newsContent) {
         Intent intent = new Intent(context, NewsContentActivity.class);
