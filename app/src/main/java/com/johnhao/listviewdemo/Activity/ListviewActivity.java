@@ -14,7 +14,7 @@ import com.johnhao.listviewdemo.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListviewActivity extends AppCompatActivity {
+public class ListviewActivity extends BaseActivity {
 
     private ListView lv;
     private List<Fruit> fruitList = new ArrayList<>();
@@ -37,7 +37,7 @@ public class ListviewActivity extends AppCompatActivity {
     }
 
     private void initFruits() {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 10; i++) {
             Fruit apple = new Fruit("Apple", R.drawable.apple_pic);
             fruitList.add(apple);
 

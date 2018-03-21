@@ -21,7 +21,6 @@ public class RecyclehorActivity extends BaseActivity {
 
     private List<Fruit> fruitList = new ArrayList<>();
     private RecyclerView rvh;
-    private Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,19 +29,11 @@ public class RecyclehorActivity extends BaseActivity {
         setTitle("Recycle View Horizontal");
         initFruits();
         rvh = findViewById(R.id.recycle_view_hor);
-        btn = findViewById(R.id.recycle_view_btn);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         rvh.setLayoutManager(layoutManager);
         FruitAdapterHor fruitAdapterHor = new FruitAdapterHor(fruitList);
         rvh.setAdapter(fruitAdapterHor);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(RecyclehorActivity.this, RecycleviewStagActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 
 

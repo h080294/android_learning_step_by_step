@@ -30,7 +30,7 @@ public class RecycleviewActivity extends BaseActivity {
     }
 
     private void initFruits() {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 20; i++) {
             Fruit apple = new Fruit("Apple", R.drawable.apple_pic);
             fruitList.add(apple);
 
