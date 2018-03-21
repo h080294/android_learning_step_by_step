@@ -13,7 +13,16 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textColor="#00ff00"
-        android:text="This is text"/>
+        android:text="This is text"
+        android:layout_marginTop="10dp"
+        android:textSize="23sp"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is a button"
+        android:textAllCaps="false"/>
 
     <EditText
         android:id="@+id/editTextView"
@@ -29,25 +38,32 @@
         android:text="GetEditText"
         android:textAllCaps="false"/>
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/apple_pic"/>
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/btn_show"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Show ProgressBr"
-            android:textAllCaps="false"/>
-
-        <Button
-            android:id="@+id/btn_hide"
+            android:id="@+id/btn_hide_progressbar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="hide ProgressBr"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_show_progressbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Show ProgressBr"
             android:textAllCaps="false"/>
 
     </LinearLayout>
@@ -55,14 +71,20 @@
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"/>
 
     <Button
         android:id="@+id/btn_alret"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Alert Dialog"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"/>
 
     <Button
         android:id="@+id/btn_progress"
