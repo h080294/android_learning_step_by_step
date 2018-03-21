@@ -31,7 +31,7 @@ public class RecycleviewStagActivity extends AppCompatActivity {
     }
 
     private void initFruits() {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 20; i++) {
             Fruit apple = new Fruit("Apple Apple Apple Apple Apple Apple Apple Apple", R.drawable.apple_pic);
             fruitList.add(apple);
 
