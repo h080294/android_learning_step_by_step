@@ -5,7 +5,6 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-    <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
@@ -20,14 +19,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.SecActivity">
+        <activity android:name=".activity.SecActivity">
             <intent-filter>
                 <action android:name="com.johnhao.listviewdemo.ACTION_START" />
 
@@ -35,7 +34,7 @@
                 <category android:name="android.intent.category.MY_CATEGROY" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.ThrActivity">
+        <activity android:name=".activity.ThrActivity">
             <intent-filter tools:ignore="AppLinkUrlError">
                 <action android:name="android.intent.action.VIEW" />
 
@@ -44,25 +43,25 @@
                 <data android:scheme="http" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.FourthActivity" />
-        <activity android:name=".Activity.ListviewActivity" />
-        <activity android:name=".Activity.RecycleviewActivity" />
-        <activity android:name=".Activity.RecyclehorActivity" />
-        <activity android:name=".Activity.RecycleviewStagActivity" />
-        <activity android:name=".Activity.UIBestPraticeActivity" />
-        <activity android:name=".Activity.ListViewDemoActivity" />
-        <activity android:name=".Activity.RecycleViewDemoActivity" />
-        <activity android:name=".Activity.FragmentSimActivity" />
-        <activity android:name=".Activity.FragmentDemoActivity" />
-        <activity android:name=".Activity.FragmentAddActivity" />
-        <activity android:name=".Activity.NewsTitleActivity" />
-        <activity android:name=".Activity.NewsContentActivity" />
-        <activity android:name=".Activity.BroadcastDemoActivity" />
-        <activity android:name=".Activity.NewworkChangeActivity" />
-        <activity android:name=".Activity.MyBroadcastReceiverActivity" />
+        <activity android:name=".activity.FourthActivity" />
+        <activity android:name=".activity.ListviewActivity" />
+        <activity android:name=".activity.RecycleviewActivity" />
+        <activity android:name=".activity.RecyclehorActivity" />
+        <activity android:name=".activity.RecycleviewStagActivity" />
+        <activity android:name=".activity.UIBestPraticeActivity" />
+        <activity android:name=".activity.ListViewDemoActivity" />
+        <activity android:name=".activity.RecycleViewDemoActivity" />
+        <activity android:name=".activity.FragmentSimActivity" />
+        <activity android:name=".activity.FragmentDemoActivity" />
+        <activity android:name=".activity.FragmentAddActivity" />
+        <activity android:name=".activity.NewsTitleActivity" />
+        <activity android:name=".activity.NewsContentActivity" />
+        <activity android:name=".activity.BroadcastDemoActivity" />
+        <activity android:name=".activity.NewworkChangeActivity" />
+        <activity android:name=".activity.MyBroadcastReceiverActivity" />
 
         <receiver
-            android:name=".Receiver.MyBroadcastReceiver"
+            android:name=".receiver.MyBroadcastReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter android:priority="100">
@@ -70,19 +69,19 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".Activity.LocalBroadcastActivity" />
-        <activity android:name=".Activity.LoginActivity" />
-        <activity android:name=".Activity.AfterLoginActivity" />
-        <activity android:name=".Activity.PersistenceDemoActivity" />
-        <activity android:name=".Activity.PersSaveFileActivity" />
-        <activity android:name=".Activity.PreSharedPreferencesActivity" />
-        <activity android:name=".Activity.LoginAdvActivity" />
-        <activity android:name=".Activity.SQLiteActivity" />
-        <activity android:name=".Activity.ContentProviderDemoActivity" />
-        <activity android:name=".Activity.ContentProviderMakeCallActivity" />
-        <activity android:name=".Activity.ContentProviderContactActivity" />
-        <activity android:name=".Activity.CameraAlbumActivity" />
-        <activity android:name=".Activity.MediaDemoActivity" />
+        <activity android:name=".activity.LocalBroadcastActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.AfterLoginActivity" />
+        <activity android:name=".activity.PersistenceDemoActivity" />
+        <activity android:name=".activity.PersSaveFileActivity" />
+        <activity android:name=".activity.PreSharedPreferencesActivity" />
+        <activity android:name=".activity.LoginAdvActivity" />
+        <activity android:name=".activity.SQLiteActivity" />
+        <activity android:name=".activity.ContentProviderDemoActivity" />
+        <activity android:name=".activity.ContentProviderMakeCallActivity" />
+        <activity android:name=".activity.ContentProviderContactActivity" />
+        <activity android:name=".activity.CameraAlbumActivity" />
+        <activity android:name=".activity.MediaDemoActivity" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
@@ -94,10 +93,10 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <activity android:name=".Activity.MediaPlayAudioActivity" />
+        <activity android:name=".activity.MediaPlayAudioActivity" />
 
         <receiver
-            android:name=".Receiver.BootCompleteReceiver"
+            android:name=".receiver.BootCompleteReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>

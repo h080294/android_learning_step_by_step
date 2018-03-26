@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.johnhao.listviewdemo.Activity.PersistenceDemoActivity">
+    tools:context="com.johnhao.listviewdemo.activity.PersistenceDemoActivity">
 
     <ListView
         android:id="@+id/persistence_listview"

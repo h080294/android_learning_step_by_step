@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#d8e0e8"
-    tools:context="com.johnhao.listviewdemo.Activity.UIBestPraticeActivity">
+    tools:context="com.johnhao.listviewdemo.activity.UIBestPraticeActivity">
 
 
     <android.support.v7.widget.RecyclerView

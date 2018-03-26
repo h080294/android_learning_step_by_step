@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.johnhao.listviewdemo.Activity.AfterLoginActivity">
+    tools:context="com.johnhao.listviewdemo.activity.AfterLoginActivity">
 
     <TextView
         android:text="哈哈，居然登陆成功了"

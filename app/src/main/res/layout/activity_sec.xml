@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.johnhao.listviewdemo.Activity.SecActivity">
+    tools:context="com.johnhao.listviewdemo.activity.SecActivity">
 
     <Button
         android:id="@+id/btn"

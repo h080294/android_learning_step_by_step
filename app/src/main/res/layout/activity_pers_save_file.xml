@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.johnhao.listviewdemo.Activity.PersSaveFileActivity">
+    tools:context="com.johnhao.listviewdemo.activity.PersSaveFileActivity">
 
     <EditText
         android:id="@+id/edit_content_save_file"

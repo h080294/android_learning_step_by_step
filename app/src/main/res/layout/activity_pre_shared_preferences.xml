@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.johnhao.listviewdemo.Activity.PreSharedPreferencesActivity">
+    tools:context="com.johnhao.listviewdemo.activity.PreSharedPreferencesActivity">
 
     <Button
         android:id="@+id/btn_save_sharedprefs"
