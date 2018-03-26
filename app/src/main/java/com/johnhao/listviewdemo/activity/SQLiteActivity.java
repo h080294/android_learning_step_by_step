@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.johnhao.listviewdemo.R;
-import com.johnhao.listviewdemo.Util.MyDatabaseHelper;
+import com.johnhao.listviewdemo.util.MyDatabaseHelper;
 
 public class SQLiteActivity extends BaseActivity {
 

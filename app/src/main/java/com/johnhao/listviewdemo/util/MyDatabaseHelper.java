@@ -1,4 +1,4 @@
-package com.johnhao.listviewdemo.Util;
+package com.johnhao.listviewdemo.util;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

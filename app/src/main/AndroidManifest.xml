@@ -4,13 +4,12 @@
     package="com.johnhao.listviewdemo">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:allowBackup="true"
@@ -59,16 +58,6 @@
         <activity android:name=".activity.BroadcastDemoActivity" />
         <activity android:name=".activity.NewworkChangeActivity" />
         <activity android:name=".activity.MyBroadcastReceiverActivity" />
-
-        <receiver
-            android:name=".receiver.MyBroadcastReceiver"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter android:priority="100">
-                <action android:name="com.johnhao.listviewdemo.MY_BROADCAST" />
-            </intent-filter>
-        </receiver>
-
         <activity android:name=".activity.LocalBroadcastActivity" />
         <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.AfterLoginActivity" />
@@ -82,6 +71,7 @@
         <activity android:name=".activity.ContentProviderContactActivity" />
         <activity android:name=".activity.CameraAlbumActivity" />
         <activity android:name=".activity.MediaDemoActivity" />
+        <activity android:name=".activity.MediaPlayAudioActivity" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
@@ -93,16 +83,33 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <activity android:name=".activity.MediaPlayAudioActivity" />
+        <receiver
+            android:name=".receiver.MyBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.johnhao.listviewdemo.MY_BROADCAST" />
+            </intent-filter>
+        </receiver>
 
         <receiver
             android:name=".receiver.BootCompleteReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
+
+        <receiver
+            android:name=".receiver.AnotherBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="100">
+                <action android:name="com.johnhao.listviewdemo.MY_BROADCAST" />
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>
