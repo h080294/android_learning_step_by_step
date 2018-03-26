@@ -77,7 +77,7 @@ public class NewsTitleFragment extends Fragment {
                         NewsContentActivity.actionStart(getActivity(), news.getTitle(), news.getContent());
                     } else {
                         // 如果是双页模式，刷新NewsContentFragment的内容
-                        NewsContentFragment newsContentFragment = (NewsContentFragment) getFragmentManager().findFragmentById(R.id.news_content_layout);
+                        NewsContentFragment newsContentFragment = (NewsContentFragment) getFragmentManager().findFragmentById(R.id.news_content_fragment);
                         newsContentFragment.refresh(news.getTitle(), news.getContent());
                     }
                 }

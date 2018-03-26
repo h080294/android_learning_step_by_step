@@ -3,6 +3,7 @@ package com.johnhao.listviewdemo.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.johnhao.listviewdemo.Fragment.RightFragment;
 import com.johnhao.listviewdemo.R;
 
 public class FragmentSimActivity extends BaseActivity {
