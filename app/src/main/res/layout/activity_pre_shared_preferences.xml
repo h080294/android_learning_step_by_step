@@ -19,23 +19,21 @@
         android:layout_height="wrap_content"
         android:text="获取SharedPrefs"/>
 
+    <Button
+        android:id="@+id/btn_sharedprefs_practice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Sharedprefs Practice"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"/>
+
     <TextView
         android:id="@+id/text_sharedprefs_load"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
-        android:layout_gravity="center"/>
-
-    <Button
-        android:id="@+id/btn_sharedprefs_practice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Sharedprefs Practice"
-        android:layout_marginTop="30dp"
-        android:background="#ffff00"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        android:textAllCaps="false"/>
+        android:text="通过Log查看详情"/>
 
 </LinearLayout>

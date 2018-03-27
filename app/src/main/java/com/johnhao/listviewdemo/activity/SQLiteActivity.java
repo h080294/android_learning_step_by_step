@@ -25,7 +25,7 @@ public class SQLiteActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sqlite);
         setTitle("SQLite");
-        dbHelper = new MyDatabaseHelper(this, "BookStore.db", null, 1);
+        dbHelper = new MyDatabaseHelper(this, "BookStore.db", null, 2);
         btn = findViewById(R.id.btn_sql_create);
         add_data = findViewById(R.id.btn_sql_add_data);
         update_data = findViewById(R.id.btn_sql_update_data);
@@ -39,7 +39,7 @@ public class SQLiteActivity extends BaseActivity {
         });
 
         // 添加数据
-        btn.setOnClickListener(new View.OnClickListener() {
+        add_data.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 SQLiteDatabase db = dbHelper.getReadableDatabase();
@@ -66,7 +66,7 @@ public class SQLiteActivity extends BaseActivity {
                 SQLiteDatabase db = dbHelper.getWritableDatabase();
                 ContentValues values = new ContentValues();
                 values.put("price", 254.23);
-                db.update("Book", values, "name = ?", new String[]{"Travel in Code world"});
+                db.update("Book", values, "name = ?", new String[]{"Travel in Code world2"});
             }
         });
 

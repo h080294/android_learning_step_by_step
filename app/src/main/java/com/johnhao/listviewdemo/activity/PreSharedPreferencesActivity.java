@@ -14,7 +14,6 @@ public class PreSharedPreferencesActivity extends BaseActivity {
 
     private Button btn;
     private Button btn_load;
-    private TextView tv;
     private Button btn_pratice;
 
     @Override
@@ -22,8 +21,6 @@ public class PreSharedPreferencesActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pre_shared_preferences);
         setTitle("SharedPreferences");
-        tv = findViewById(R.id.text_sharedprefs_load);
-        tv.setText("通过Log查看详情");
         btn = findViewById(R.id.btn_save_sharedprefs);
         btn_load = findViewById(R.id.btn_load_sharedprefs);
         btn_pratice = findViewById(R.id.btn_sharedprefs_practice);
