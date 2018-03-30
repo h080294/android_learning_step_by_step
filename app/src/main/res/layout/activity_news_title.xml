@@ -5,11 +5,11 @@
     android:id="@+id/news_title_laytout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.johnhao.listviewdemo.activity.NewsTitleActivity">
+    tools:context="com.johnhao.demo.activity.NewsTitleActivity">
 
     <fragment
         android:id="@+id/news_title_fragment"
-        android:name="com.johnhao.listviewdemo.fragment.NewsTitleFragment"
+        android:name="com.johnhao.demo.fragment.NewsTitleFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

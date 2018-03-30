@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.johnhao.listviewdemo.activity.NewsContentActivity">
+    tools:context="com.johnhao.demo.activity.NewsContentActivity">
 
     <fragment
         android:id="@+id/news_content_fragment"
-        android:name="com.johnhao.listviewdemo.fragment.NewsContentFragment"
+        android:name="com.johnhao.demo.fragment.NewsContentFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

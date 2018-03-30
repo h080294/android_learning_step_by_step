@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.johnhao.listviewdemo.activity.LocalBroadcastActivity">
+    tools:context="com.johnhao.demo.activity.LocalBroadcastActivity">
 
     <Button
         android:id="@+id/btn_send_internal_broadcast"

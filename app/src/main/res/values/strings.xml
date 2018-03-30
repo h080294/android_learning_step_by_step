@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ListViewDemo</string>
+    <string name="app_name">Demo</string>
     <string name="button1">Button Click</string>
     <string name="button2">Back to MainActivity</string>
     <string name="meun_title">Menu</string>
@@ -22,5 +22,7 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="request_network">Request Network</string>
+    <string name="response_here">Response here</string>
 
 </resources>

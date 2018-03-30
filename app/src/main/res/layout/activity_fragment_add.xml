@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context="com.johnhao.listviewdemo.activity.FragmentAddActivity">
+    tools:context="com.johnhao.demo.activity.FragmentAddActivity">
 
     <fragment
         android:id="@+id/left_fragment"
-        android:name="com.johnhao.listviewdemo.fragment.LeftFragment"
+        android:name="com.johnhao.demo.fragment.LeftFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"/>

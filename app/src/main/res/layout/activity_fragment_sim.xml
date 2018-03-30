@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.johnhao.listviewdemo.activity.FragmentSimActivity">
+    tools:context="com.johnhao.demo.activity.FragmentSimActivity">
 
     <fragment
         android:id="@+id/left_fragment"
-        android:name="com.johnhao.listviewdemo.fragment.LeftFragment"
+        android:name="com.johnhao.demo.fragment.LeftFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"/>
 
     <fragment
         android:id="@+id/right_fragment"
-        android:name="com.johnhao.listviewdemo.fragment.RightFragment"
+        android:name="com.johnhao.demo.fragment.RightFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"/>

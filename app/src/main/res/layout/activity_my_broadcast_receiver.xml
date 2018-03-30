@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.johnhao.listviewdemo.activity.MyBroadcastReceiverActivity">
+    tools:context="com.johnhao.demo.activity.MyBroadcastReceiverActivity">
 
     <Button
         android:id="@+id/btn_send_mybroadcast"

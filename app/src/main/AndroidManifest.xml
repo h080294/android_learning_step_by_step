@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.johnhao.listviewdemo">
+    package="com.johnhao.demo">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -10,6 +10,7 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -75,7 +76,7 @@
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.johnhao.listviewdemo.fileprovider"
+            android:authorities="com.johnhao.demo.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -91,7 +92,6 @@
                 <action android:name="com.johnhao.listviewdemo.MY_BROADCAST" />
             </intent-filter>
         </receiver>
-
         <receiver
             android:name=".receiver.BootCompleteReceiver"
             android:enabled="true"
@@ -100,7 +100,6 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-
         <receiver
             android:name=".receiver.AnotherBroadcastReceiver"
             android:enabled="true"
@@ -110,6 +109,9 @@
             </intent-filter>
         </receiver>
 
+        <activity android:name=".activity.WebViewActivity" />
+        <activity android:name=".activity.WebDemoActivity" />
+        <activity android:name=".activity.WebNetworkActivity"></activity>
     </application>
 
 </manifest>

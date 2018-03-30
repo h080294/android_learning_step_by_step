@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="#ff00ff"
     android:layout_gravity="center_horizontal"
-    tools:context="com.johnhao.listviewdemo.fragment.LeftFragment">
+    tools:context="com.johnhao.demo.fragment.LeftFragment">
 
     <Button
         android:id="@+id/btn_left_frag"
