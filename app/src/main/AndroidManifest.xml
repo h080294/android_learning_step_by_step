@@ -118,7 +118,15 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".downloadPractice.DownloadPracticeActivity"></activity>
+        <activity android:name=".downloadPractice.DownloadPracticeActivity" />
+        <activity android:name=".activity.ServiceDemoActivity" />
+        <activity android:name=".activity.ServiceMulThreadActivity" />
+        <activity android:name=".activity.ServiceTestActivity" />
+
+        <service
+            android:name=".service.MyService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>

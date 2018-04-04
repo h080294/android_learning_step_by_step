@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.johnhao.demo.activity.ServiceMulThreadActivity">
+
+    <Button
+        android:id="@+id/service_multhread_crash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/service_crash"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/service_multhread_handle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/hanler"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/service_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/original_text"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

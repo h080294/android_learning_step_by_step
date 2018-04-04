@@ -18,7 +18,7 @@ public class MainActivity extends BaseActivity {
 
     private static final String TAG = "MainActivity";
     private static final String[] strs = new String[]{"基本的控件练习", "RecycleView 练习",
-            "Fragment 练习", "BroadCast 练习", "持久化技术", "Content Provider", "多媒体", "Web", "DownloadPractice"};
+            "Fragment 练习", "BroadCast 练习", "持久化技术", "Content Provider", "多媒体", "Web", "Service"};
     private ListView lv;
 
     @Override
@@ -69,7 +69,7 @@ public class MainActivity extends BaseActivity {
                         startActivity(web_intent);
                         break;
                     case 8:
-                        Intent download_intent = new Intent(MainActivity.this, DownloadPracticeActivity.class);
+                        Intent download_intent = new Intent(MainActivity.this, ServiceDemoActivity.class);
                         startActivity(download_intent);
                         break;
                     default:
