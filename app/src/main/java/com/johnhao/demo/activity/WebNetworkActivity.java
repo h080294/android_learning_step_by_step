@@ -14,6 +14,10 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+
 public class WebNetworkActivity extends BaseActivity implements View.OnClickListener{
 
     private TextView tv;
@@ -84,8 +88,26 @@ public class WebNetworkActivity extends BaseActivity implements View.OnClickList
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.web_network_btn:
-                sendRequestWithHttpURLConnection();
+//                sendRequestWithHttpURLConnection();
+                sendRequestWithOKHttp();
         }
 
+    }
+
+    private void sendRequestWithOKHttp() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    OkHttpClient client = new OkHttpClient();
+                    Request request = new Request.Builder().url("http://www.oneniceapp.com/").build();
+                    Response response = client.newCall(request).execute();
+                    String responseData = response.body().string();
+                    showResponse(responseData);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
     }
 }

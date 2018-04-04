@@ -111,7 +111,14 @@
 
         <activity android:name=".activity.WebViewActivity" />
         <activity android:name=".activity.WebDemoActivity" />
-        <activity android:name=".activity.WebNetworkActivity"></activity>
+        <activity android:name=".activity.WebNetworkActivity" />
+
+        <service
+            android:name=".downloadPractice.DownloadService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".downloadPractice.DownloadPracticeActivity"></activity>
     </application>
 
 </manifest>

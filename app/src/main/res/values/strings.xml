@@ -24,5 +24,9 @@
     </string>
     <string name="request_network">Request Network</string>
     <string name="response_here">Response here</string>
+    <string name="strat_download">Strat Download</string>
+    <string name="pause_download">Pause Download</string>
+    <string name="cancle_download">Cancle Download</string>
+    <string name="download_text">下载URL: http://img01.oneniceapp.com/app/nice-main-4.8.6-release.apk\n本地下载地址: /sdcard/Download/</string>
 
 </resources>

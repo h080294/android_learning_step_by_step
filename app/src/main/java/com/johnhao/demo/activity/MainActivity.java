@@ -12,12 +12,13 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.johnhao.demo.R;
+import com.johnhao.demo.downloadPractice.DownloadPracticeActivity;
 
 public class MainActivity extends BaseActivity {
 
     private static final String TAG = "MainActivity";
     private static final String[] strs = new String[]{"基本的控件练习", "RecycleView 练习",
-            "Fragment 练习", "BroadCast 练习", "持久化技术", "Content Provider", "多媒体", "Web"};
+            "Fragment 练习", "BroadCast 练习", "持久化技术", "Content Provider", "多媒体", "Web", "DownloadPractice"};
     private ListView lv;
 
     @Override
@@ -66,6 +67,10 @@ public class MainActivity extends BaseActivity {
                     case 7:
                         Intent web_intent = new Intent(MainActivity.this, WebDemoActivity.class);
                         startActivity(web_intent);
+                        break;
+                    case 8:
+                        Intent download_intent = new Intent(MainActivity.this, DownloadPracticeActivity.class);
+                        startActivity(download_intent);
                         break;
                     default:
                         setTitle("点击第" + (i + 1) + "行");
