@@ -40,7 +40,7 @@ public class DownloadTask extends AsyncTask<String, Integer, Integer> {
         File file = null;
         try {
 
-            long downloadedLength = 0;
+            long downloadedLength = 0; // 记录已下载的文件长度
             String downloadUrl = params[0];
             String fileName = downloadUrl.substring(downloadUrl.lastIndexOf("/"));
             String directory = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath();
@@ -56,11 +56,13 @@ public class DownloadTask extends AsyncTask<String, Integer, Integer> {
             if (contentLength == 0) {
                 return TYPE_FAILED;
             } else if (contentLength == downloadedLength){
+                // 已下载字节和文件总字节相等，说明已经下载完成了
                 return TYPE_SUCCESS;
             }
 
             OkHttpClient client = new OkHttpClient();
             Request request = new Request.Builder()
+                    .addHeader("RANGE", "bytes=" + downloadedLength + "-")
                     .url(downloadUrl)
                     .build();
 

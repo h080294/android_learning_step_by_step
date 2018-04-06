@@ -116,7 +116,7 @@ public class DownloadService extends Service {
         builder.setContentTitle(title);
 
         if (progress > 0) {
-            builder.setContentText(progress + "%s");
+            builder.setContentText(progress + "%");
             builder.setProgress(100, progress, false);
         }
 
